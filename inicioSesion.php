@@ -41,6 +41,7 @@
             echo "</head>";
             echo "<body>";
             echo "<div class='container'>";
+            echo "<button><a href='register.php'>Registrate si no tienes cuenta</a></button>";
             echo "<h1>Inicio de Sesion</h1>";
                 echo "<form action='?' method='post'>";
                 pintaValores("Usuario", "user");
@@ -68,6 +69,7 @@
             echo "</head>";
             echo "<body>";
             echo "<div class='container'>";
+            echo "<button><a href='register.php'>Registrate si no tienes cuenta</a></button>";
             echo "<h1>Inicio de Sesion</h1>";
                 echo "<form action='?' method='post'>";
                 validaVacios("Usuario", $user, "user", $contador);

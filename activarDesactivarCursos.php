@@ -4,7 +4,7 @@
 
     try {
         $boton = $_POST['boton'];
-        $stmt = $enlace->prepare("select * from cursos");
+        $stmt = $enlace->prepare("select * from cursos where plazoinscripcion < Current_Date");
         $stmt->execute();
         if ($boton != "Activar/Desactivar") {
             echo "<!DOCTYPE html>";

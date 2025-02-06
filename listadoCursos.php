@@ -5,7 +5,7 @@
     try {
         $boton = $_POST['boton'];
         if ($boton != "Enviar Inscripcion") {
-            $consulta = "select * from cursos where abierto = 1";
+            $consulta = "select * from cursos where abierto = 1 and plazoinscripcion > Current_Date";
             $resultado = $enlace->query($consulta);
             echo "<!DOCTYPE html>";
             echo "<html lang='es'>";
@@ -89,15 +89,16 @@
                         //Ejecutamos la consulta
                         if ($stmt->execute()) {
                             echo "<p style='color: green'>Registro Insertado Correctamente para el curso con código $codigoCurso</p>";
+                            header("Location: recepcionMandaCorreo.php");
                         } else {
                             echo "<p style='color: red'>Error: No se ha podido insertar el registro para el curso con código $codigoCurso. Detalles:</p>";
                         }
                     }
                     //La pongo fuera y de manera preparada por que se duplicaban las restas
                     //y no realizaba bien la consulta update pero podria funcionar dentro
-                    $stmt2 = $enlace->prepare("update cursos set numeroplazas=numeroplazas-1 where codigo = (?)");
+                    /*$stmt2 = $enlace->prepare("update cursos set numeroplazas=numeroplazas-1 where codigo = (?)");
                     $stmt2->bindParam(1, $codigoCurso, PDO::PARAM_INT);
-                    $stmt2->execute();
+                    $stmt2->execute();*/
                 }
             }
             echo "</div>";
@@ -105,6 +106,6 @@
             echo "</html>";
         }
     } catch (PDOException $e) {
-        echo "Error: ".$e->getMessage();
+        echo "<p style='color: red'>No puedes inscribirte al mismo curso</p>";
     }
 ?>
