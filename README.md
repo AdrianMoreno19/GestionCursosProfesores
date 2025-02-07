@@ -1,18 +1,18 @@
-# 📚 Gestión de Cursos
+# 📚 Sistema de Gestión de Cursos
 
 ![Build Status](https://img.shields.io/badge/status-active-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-Este es un proyecto de gestión de cursos desarrollado en PHP. Permite la administración de cursos, usuarios y solicitudes de inscripción, todo a través de una interfaz web interactiva.
+Este es un sistema desarrollado en PHP para la administración de cursos, usuarios y solicitudes de inscripción, todo a través de una interfaz web intuitiva.
 
 ---
 
-## ✨ Características
+## ✨ Funcionalidades
 
-- 🖥️ **Gestión de cursos:** El administrador puede añadir, borrar y desactivar cursos según el estado de inscripción.
-- 🧑‍🎓 **Inscripción de usuarios:** Los usuarios pueden solicitar la inscripción a los cursos disponibles.
-- 📧 **Confirmación por correo electrónico:** Cuando un usuario es aceptado en un curso, se envía una notificación de confirmación por correo.
-- 🗓️ **Control de fechas:** Los cursos pueden desactivarse por parte del administrador cuando su plazo de inscripción haya expirado.
-- 🔒 **Gestión de usuarios:** Los administradores tienen control total sobre las inscripciones y los cursos disponibles.
+- 🖥️ **Administración de cursos:** Permite agregar, eliminar y desactivar cursos según el estado de inscripción.
+- 🧑‍🎓 **Gestión de inscripciones:** Los usuarios pueden solicitar inscripción en los cursos disponibles.
+- 📧 **Notificaciones por correo:** Se envían confirmaciones automáticas cuando un usuario es aceptado en un curso.
+- 🗓️ **Control de fechas:** Posibilidad de desactivar cursos cuando finaliza el período de inscripción.
+- 🔒 **Gestión de usuarios:** Los administradores tienen control total sobre inscripciones y cursos.
 
 ## 📷 Captura de Pantalla
 
@@ -20,9 +20,9 @@ Este es un proyecto de gestión de cursos desarrollado en PHP. Permite la admini
 
 ---
 
-## 🔧 Requisitos
+## 🔧 Requisitos del Sistema
 
-Este proyecto requiere un servidor web con PHP y acceso a una base de datos MySQL. Puedes usar **XAMPP**, **MAMP** o cualquier servidor PHP compatible.
+Este sistema requiere un servidor web con PHP y acceso a una base de datos MySQL. Puedes utilizar **XAMPP**, **MAMP** o cualquier entorno PHP compatible.
 
 - **PHP 7.0 o superior**
 - **MySQL**
@@ -30,53 +30,53 @@ Este proyecto requiere un servidor web con PHP y acceso a una base de datos MySQ
 
 ---
 
-## ℹ️ Instalación y Uso
+## ℹ️ Instalación y Configuración
 
-Sigue estos pasos para instalar y usar el proyecto:
+Sigue estos pasos para instalar y utilizar el sistema:
 
-### 1️⃣ Clona el repositorio:
+### 1️⃣ Clonar el repositorio:
 ```bash
 git clone https://github.com/AdrianMorenoGomez/GestionDeCursos.git
 ```
 
-### 2️⃣ Configura la base de datos:
-- Importa el archivo SQL de la base de datos en tu servidor MySQL.
-- Asegúrate de configurar las credenciales de la base de datos en el archivo **config.php**.
+### 2️⃣ Configurar la base de datos:
+- Importa el archivo SQL en tu servidor MySQL.
+- Edita el archivo **config.php** con las credenciales correctas de la base de datos.
 
-### 3️⃣ Accede al proyecto en tu servidor web:
-- Copia los archivos del proyecto a la carpeta raíz de tu servidor web (por ejemplo, `htdocs` si usas XAMPP).
+### 3️⃣ Acceder al sistema en el servidor web:
+- Copia los archivos del sistema en la carpeta raíz de tu servidor web (por ejemplo, `htdocs` en XAMPP).
 - Abre el navegador y accede a:
   ```
   http://localhost/GestionDeCursos
   ```
 
-### 4️⃣ Accede como administrador:
-- Utiliza las credenciales predeterminadas para acceder al panel de administración y gestionar los cursos y usuarios.
+### 4️⃣ Acceder como administrador:
+- Utiliza las credenciales predefinidas para administrar cursos y usuarios.
 
 ---
 
 ## ⚙️ Personalización
 
-Puedes personalizar el proyecto según tus necesidades:
+Puedes adaptar el sistema a tus necesidades:
 
-- **Base de datos:** Edita la estructura de la base de datos según los requerimientos de tu institución o empresa.
-- **Estilos:** Modifica los archivos CSS para cambiar el diseño y los colores.
-- **Funcionalidad:** Ajusta los archivos PHP si deseas modificar la lógica de inscripción, gestión de cursos o correos electrónicos.
+- **Base de datos:** Modifica la estructura según los requerimientos de tu organización.
+- **Diseño:** Edita los archivos CSS para cambiar el estilo y colores.
+- **Funcionalidad:** Ajusta los archivos PHP para modificar lógica de inscripción, cursos o correos electrónicos.
 
 ---
 
 ## 🚀 Contribuciones
 
-Si deseas contribuir a este proyecto:
+Si quieres mejorar este sistema:
 
-1. Haz un **fork** del repositorio.
-2. Crea una rama para tus cambios:
+1. Realiza un **fork** del repositorio.
+2. Crea una nueva rama:
    ```bash
    git checkout -b nombre-de-tu-rama
    ```
-3. Realiza tus modificaciones y haz un **commit**:
+3. Aplica tus modificaciones y realiza un **commit**:
    ```bash
-   git commit -m "Descripción de tus cambios"
+   git commit -m "Descripción de cambios"
    ```
 4. Envía un **pull request**.
 
@@ -84,19 +84,19 @@ Si deseas contribuir a este proyecto:
 
 ## ✉️ Licencia
 
-Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más información.
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## ⭐️ Fomenta el crecimiento del proyecto
+## ⭐️ Apoya el Proyecto
 
-Si te ha gustado este proyecto o lo encuentras útil, ¡no dudes en darle una estrella! ⭐️
+Si este sistema te ha sido útil, considera darle una estrella ⭐️ en GitHub.
 
-Las estrellas ayudan a otros usuarios a encontrar este repositorio y a motivarme a seguir mejorando y manteniendo el proyecto.
+Las estrellas ayudan a más personas a descubrir el proyecto y me motivan a seguir mejorándolo.
 
-### Cómo puedes ayudar:
+### ¿Cómo ayudar?
 ✅ Da una estrella ⭐️ al repositorio.
-✅ Haz un **fork** para modificar o mejorar el código.
-✅ Abre un **pull request** con tus mejoras o correcciones.
+✅ Haz un **fork** y personaliza el código.
+✅ Envíanos un **pull request** con mejoras.
 
 ¡Gracias por tu apoyo! 🙌
